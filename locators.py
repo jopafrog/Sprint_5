@@ -25,6 +25,6 @@ class TestLocators:
     LOGOUT_BUTTON = By.XPATH, './/button[contains(@class, "Account_button")]'  # Кнопка выхода из аккаунта
 
     # Вкладки конструктора
-    BUNS = By.XPATH, './/span[text()="Булки"]/parent::div'
-    SAUCES = By.XPATH, './/span[text()="Соусы"]/parent::div'
-    TOPPINGS = By.XPATH, './/span[text()="Начинки"]/parent::div'
+    BUNS_TAB = By.XPATH, './/span[text()="Булки"]/parent::div'
+    SAUCES_TAB = By.XPATH, './/span[text()="Соусы"]/parent::div'
+    TOPPINGS_TAB = By.XPATH, './/span[text()="Начинки"]/parent::div'
