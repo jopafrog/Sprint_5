@@ -1,6 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from locators import TestLocators
+import data
 
 
 class TestLogin:
@@ -11,8 +12,8 @@ class TestLogin:
         WebDriverWait(driver, 3).until(
             expected_conditions.visibility_of_element_located(TestLocators.TITLE_LOGIN_PAGE))
 
-        driver.find_element(*TestLocators.EMAIL_INPUT).send_keys('apud_qa5_999@yandex.ru')
-        driver.find_element(*TestLocators.PASS_INPUT).send_keys('qwe321')
+        driver.find_element(*TestLocators.EMAIL_INPUT).send_keys(data.TEST_ACCOUNT_EMAIL)
+        driver.find_element(*TestLocators.PASS_INPUT).send_keys(data.TEST_ACCOUNT_PASS)
 
         driver.find_element(*TestLocators.LOGIN_PAGE_BUTTON).click()
         WebDriverWait(driver, 3).until(
@@ -28,8 +29,8 @@ class TestLogin:
         WebDriverWait(driver, 3).until(
             expected_conditions.visibility_of_element_located(TestLocators.TITLE_LOGIN_PAGE))
 
-        driver.find_element(*TestLocators.EMAIL_INPUT).send_keys('apud_qa5_999@yandex.ru')
-        driver.find_element(*TestLocators.PASS_INPUT).send_keys('qwe321')
+        driver.find_element(*TestLocators.EMAIL_INPUT).send_keys(data.TEST_ACCOUNT_EMAIL)
+        driver.find_element(*TestLocators.PASS_INPUT).send_keys(data.TEST_ACCOUNT_PASS)
 
         driver.find_element(*TestLocators.LOGIN_PAGE_BUTTON).click()
         WebDriverWait(driver, 3).until(
@@ -45,8 +46,8 @@ class TestLogin:
         WebDriverWait(driver, 3).until(
             expected_conditions.visibility_of_element_located(TestLocators.TITLE_LOGIN_PAGE))
 
-        driver.find_element(*TestLocators.EMAIL_INPUT).send_keys('apud_qa5_999@yandex.ru')
-        driver.find_element(*TestLocators.PASS_INPUT).send_keys('qwe321')
+        driver.find_element(*TestLocators.EMAIL_INPUT).send_keys(data.TEST_ACCOUNT_EMAIL)
+        driver.find_element(*TestLocators.PASS_INPUT).send_keys(data.TEST_ACCOUNT_PASS)
 
         driver.find_element(*TestLocators.LOGIN_PAGE_BUTTON).click()
         WebDriverWait(driver, 3).until(
@@ -62,8 +63,8 @@ class TestLogin:
         WebDriverWait(driver, 3).until(
             expected_conditions.visibility_of_element_located(TestLocators.TITLE_LOGIN_PAGE))
 
-        driver.find_element(*TestLocators.EMAIL_INPUT).send_keys('apud_qa5_999@yandex.ru')
-        driver.find_element(*TestLocators.PASS_INPUT).send_keys('qwe321')
+        driver.find_element(*TestLocators.EMAIL_INPUT).send_keys(data.TEST_ACCOUNT_EMAIL)
+        driver.find_element(*TestLocators.PASS_INPUT).send_keys(data.TEST_ACCOUNT_PASS)
 
         driver.find_element(*TestLocators.LOGIN_PAGE_BUTTON).click()
         WebDriverWait(driver, 3).until(
